@@ -1,7 +1,3 @@
----
-title: My First Page
-layout: default
----
 
 ## Welcome to GitHub Pages
 
