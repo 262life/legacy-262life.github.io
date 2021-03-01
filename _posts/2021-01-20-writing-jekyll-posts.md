@@ -1,21 +1,17 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
+excerpt_separator: <!--more-->
 ---
 
-
-# This is a post
-
-This is content
-
-Setup K3S Cluster
+## Setup K3S Cluster
 By default Rancher K3S comes with Traefik 1.7. We will setup K3S without Traefik ingress in this tutorial.
 
 Execute below command on master node 1.
 curl -sfL https://get.k3s.io | sh -s - server   --datastore-endpoint="mysql://user:pass@tcp(ip_address:3306)/databasename" --disable traefik --node-taint CriticalAddonsOnly=true:NoExecute --tls-san 192.168.1.2 --tls-san k3s.home.lab
 Execute above command on master node 2 to setup HA.
 Validate cluster setup:
-
+<!--more-->
 
  
 sudo kubectl get node
