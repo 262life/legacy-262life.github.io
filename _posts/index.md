@@ -11,8 +11,8 @@ related: true
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a><br>
-      <h6> {{ post.date | date: '%B %d, %Y' }} </h6><p>{{ post.excerpt }}</p>
+      {{ post.title }}<br>
+      <p> {{ post.date | date: '%B %d, %Y' }}- {{ post.excerpt }}<a href="{{ post.url }}">more...</a></p>
     </li>
   {% endfor %}
 </ul>
