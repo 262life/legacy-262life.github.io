@@ -1,7 +1,7 @@
 ---
-layout: collection
+layout: posts
 read_time: true
-comments: false
+comments: true
 share: true
 related: true
 ---

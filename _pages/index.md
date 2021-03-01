@@ -1,6 +1,6 @@
 ---
 layout: collection
-author_profile: true
+author_profile: false
 read_time: true
 comments: true
 share: true
