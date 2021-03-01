@@ -1,6 +1,6 @@
 ---
 layout: single
-author_profile: true
+author_profile: false
 read_time: true
 comments: false
 share: true
