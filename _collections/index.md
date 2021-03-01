@@ -1,5 +1,14 @@
+
 ---
-layout: archive
+layout: home
+author_profile: true
 ---
 
-This is content
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
