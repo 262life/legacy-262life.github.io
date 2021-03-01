@@ -38,8 +38,8 @@ comments:
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
-    num_posts            : 5 (default)
-    colorscheme          : "dark" (default), "dark"
+    num_posts            : # 5 (default)
+    colorscheme          : # "dark" (default), "dark"
   utterances:
     theme                : # "github-dark" (default), "github-dark"
     issue_term           : # "pathname" (default)
