@@ -1,7 +1,10 @@
 ---
-title: Portfolio
-heading: Our Work
-subtitle: See some of our proud customers with exemplary results.
+title: BOB
+categories:
+  - sales
+  - tips
+author_staff_member: james
+show_comments: true
 ---
 
 # Urban
