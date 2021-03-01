@@ -8,5 +8,7 @@ main:
     url: /year-archive/
   - title: "Sample Collections"
     url: /collection-archive/
+  - title: "Posts"
+    url: /_posts/
   # - title: "Sitemap"
   #   url: /sitemap/
