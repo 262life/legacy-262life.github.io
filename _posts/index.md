@@ -1,8 +1,7 @@
 ---
-layout: posts
-author_profile: true
+layout: collection
 read_time: true
-comments: true
+comments: false
 share: true
 related: true
 ---
