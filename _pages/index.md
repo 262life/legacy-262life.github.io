@@ -10,15 +10,11 @@ related: false
 
 <div class="entries-{{ entries_layout }}">
 {% for page in site.pages %}
-  <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
+  {% if page.layout != 'post' %}  
+    <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
+  {% endif %}
 {% endfor %}
 </div>
 
 
 
-{% for page in site.pages %}
-  {% if page.layout != 'posts' %}  
-    <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
-    <p>{{ page.content }}</p>
-  {% endif %}
-{% endfor %}
