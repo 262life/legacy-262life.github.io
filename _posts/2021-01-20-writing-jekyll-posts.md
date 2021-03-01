@@ -1,10 +1,8 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Setup K3s Cluster"
 excerpt_separator: <!--more-->
 ---
-
-## Setup K3S Cluster
 By default Rancher K3S comes with Traefik 1.7. We will setup K3S without Traefik ingress in this tutorial.
 
 Execute below command on master node 1.
