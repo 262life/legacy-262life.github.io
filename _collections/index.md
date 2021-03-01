@@ -1,6 +1,5 @@
-
-
-
-# This is a post
+---
+layout: archive
+---
 
 This is content
