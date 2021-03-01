@@ -1,8 +1,8 @@
 ---
-layout: collection
-author_profile: false
+layout: single
+author_profile: true
 read_time: true
-comments: true
+comments: false
 share: true
 related: true
 ---
