@@ -38,8 +38,8 @@ comments:
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+    num_posts            : 5 (default)
+    colorscheme          : "dark" (default), "dark"
   utterances:
     theme                : # "github-dark" (default), "github-dark"
     issue_term           : # "pathname" (default)
@@ -98,11 +98,11 @@ author:
   avatar           : "/assets/images/bio-photo.jpg"
   bio              : "Enterprise Architecture - It's totally my DNA"
   location         : "St. Augustine FL"
-  email            :
+  email            : "bob@262.life"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:your.bob@262.life"
+      url: "mailto:bob@262.life"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://262.life"
@@ -269,7 +269,7 @@ compress_html:
 
 # Defaults
 defaults:
-  # _posts
+  _posts
   - scope:
       path: ""
       type: posts
