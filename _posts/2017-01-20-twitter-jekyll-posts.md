@@ -2,8 +2,10 @@
 layout: post
 title:  "Cool tweet!"
 summary: "This is the first tweet from my Jekyll blog..."
-teaser_image: /assets/images/twitter-site.png
-large_image: /assets/images/twitter-card.png
+header:
+  teaser: /assets/images/twitter-site.png
+  og_image: /assets/images/twitter-card.png
+
 ---
 
 
