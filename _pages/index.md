@@ -17,3 +17,10 @@ related: false
 </div>
 
 
+
+
+<div class="entries-{{ entries_layout }}">
+{% for page in site.pages %}
+    <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
+{% endfor %}
+</div>
