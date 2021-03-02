@@ -1,6 +1,9 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Cool tweet!"
+summary: "Cool Summary!"
+image: /assets/images/logo.png
+
 ---
 
 
