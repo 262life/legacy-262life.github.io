@@ -295,19 +295,10 @@ defaults:
   # _portfolio
   - scope:
       path: ""
-      type: k3s
-    values:
-      layout: single
-      author_profile: true
-      share: true
-
-  # _portfolio
-  - scope:
-      path: ""
       type: portfolio
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       share: true
 
 collections:
