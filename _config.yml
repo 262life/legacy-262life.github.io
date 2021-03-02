@@ -146,8 +146,6 @@ footer:
 include:
   - .htaccess
   - _pages
-  - _posts
-  - _collections
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -303,9 +301,9 @@ defaults:
       share: true
 
 collections:
-  - k3s:
-      output: true
-      permalink: /:collection/:path/
-  - k8s:
-      output: true
-      permalink: /:collection/:path/
+  k3s:
+    output: true
+    permalink: /:collection/:path/
+  k8s:
+    output: true
+    permalink: /:collection/:path/
