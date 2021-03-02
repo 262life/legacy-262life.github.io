@@ -1,7 +1,7 @@
 ---
-title: Portfolio
+title: k8s
 layout: collection
-permalink: /portfolio/
+permalink: /k8s/
 collection: portfolio
 entries_layout: grid
 classes: wide
