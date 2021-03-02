@@ -40,11 +40,8 @@
 
 <!-- Twitter cards -->
 
-{% if ! page.summary %}
-<meta name="twitter:description" content="{{ site.description }}">
-{% endif %}
-
-{% if ! page.image %}
+{% if  page.header.image %}
+{% else %}
 <meta name="twitter:image" content="{{ site.url }}{{ site.og_image }}">
 <meta name="og:image" content="{{ site.url }}{{ site.og_image }}">
 {% endif %}
