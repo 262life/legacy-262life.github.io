@@ -153,3 +153,11 @@
   <meta name="naver-site-verification" content="{{ site.naver_site_verification }}">
 {% endif %}
 <!-- end _includes/seo.html -->
+<!-- Default cards -->
+
+{% if  page.header.image %}
+{% else %}
+<meta name="twitter:image" content="{{ site.url }}{{ site.twitter_image }}">
+<meta property="og:image" content="{{ site.url }}{{ site.linkedin_image }}">
+{% endif %}
+<!-- end of Twitter cards -->
