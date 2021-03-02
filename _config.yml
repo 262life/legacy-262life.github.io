@@ -304,16 +304,13 @@ defaults:
   # _portfolio
   - scope:
       path: ""
-      type: k3s
+      type: portfolio
     values:
       layout: single
       author_profile: true
       share: true
 
 collections:
-  k3s:
-    output: true
-    permalink: /:collection/:path/
-  k8s:
+  portfolio:
     output: true
     permalink: /:collection/:path/
