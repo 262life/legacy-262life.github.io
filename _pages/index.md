@@ -11,7 +11,7 @@ related: false
 {% for page in site.pages %}
   {% if page.layout != 'post' %}  
     {% if page.layout != 'collection' %}  
-      <a href="{{ page.url }}">{{ page.summary }}</a><br>
+      <a href="{{ page.url }}">{{ page.title }}</a><br>
     {% endif %}
   {% endif %}
 {% endfor %}
