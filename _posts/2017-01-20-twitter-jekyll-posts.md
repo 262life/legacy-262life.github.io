@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Cool tweet!"
-summary: "Cool Summary!"
-image: /assets/images/logo.png
+summary: "This is the first tweet from my Jekyll blog..."
+image: /assets/images/twitter.png
 
 ---
 
