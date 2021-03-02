@@ -1,7 +1,7 @@
 ---
 layout: single
 author_profile: true
-read_time: false
+read_time: true
 comments: false
 share: true
 related: false
