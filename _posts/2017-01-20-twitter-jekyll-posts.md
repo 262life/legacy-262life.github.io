@@ -2,7 +2,7 @@
 layout: post
 title:  "Cool tweet!"
 summary: "This is the first tweet from my Jekyll blog..."
-image: /assets/images/twitter.png
+image: /assets/images/twitter-card.png
 
 ---
 
