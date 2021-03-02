@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Setup K3s Cluster"
+title:  "Traefik"
 excerpt_separator: <!--more-->
 ---
 By default Rancher K3S comes with Traefik 1.7. We will setup K3S without Traefik ingress in this tutorial.
