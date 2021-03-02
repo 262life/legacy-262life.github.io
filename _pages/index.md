@@ -9,7 +9,7 @@ related: false
 
 <div class="entries-{{ entries_layout }}">
 {% for page in site.pages %}
-  {% if page.layout != 'post' %}  
+  {% if page.layout != 'post' && page.layout != 'collection' %}  
     <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
   {% endif %}
 {% endfor %}
