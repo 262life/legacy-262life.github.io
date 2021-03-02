@@ -291,7 +291,6 @@ defaults:
       author_profile: true
       share: true
       read_time: true
-      permalink: /:pages/:path/
 
   # _portfolio
   - scope:
