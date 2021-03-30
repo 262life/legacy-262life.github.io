@@ -1,12 +1,12 @@
 ---
-title: "k8_shortcuts"
-excerpt: "This is a collection of kubectl and bash/zsh shortcuts to make interactions with Kubernetes a bit easier."
+title: "bob-ubuntu-image"
+excerpt: "Open source base binary image for the BoB! project."
 header:
-  image: /assets/images/unsplash-gallery-image-2.jpg
-  teaser: assets/images/unsplash-gallery-image-2-th.jpg
+  image: /assets/images/foo-bar-identity.jpg
+  teaser: /assets/images/foo-bar-identity-th.jpg
 sidebar:
   - title: "Role"
-    image: https://github.com/BobDotMe/k8s_shortcuts/blob/master/K8-Shortcut.png
+    image: https://github.com/262life/bob-ubuntu-image/blob/master/library-ubuntu-logo.png
     image_alt: "logo"
     text: "Designer, Architect, Developer"
   - title: "Responsibilities"
@@ -22,16 +22,14 @@ gallery:
     image_path: assets/images/unsplash-gallery-image-3-th.jpg
     alt: "placeholder image 3"
 ---
+bob-ubuntu-image is an open source base binary image to build from-scratch docker containers for the BoB! repository.
 
-k8s_shortcuts integrates into your bash or zsh shell to provide a number of useful shortcuts as well as the ability to keep individual kubectl config files for each cluster. The makes mangaging the configs much easier to read and manage in the end.
-
-For more details about the solutions currently supported by k8s_shortcuts, please refer to the project status section below. We plan to continue adding support for many common functions required based on community demand and engagement in future releases.
+This image should NOT be used as a general container as it is intentionally missing Linux components.
 
 {% include gallery caption="This is a sample gallery to go along with this case study." %}
+
 
 ## Licensing
 
 k8s_shortcuts is under the Apache 2.0 [License.](LICENSE)
-
-
 
