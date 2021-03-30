@@ -1,6 +1,6 @@
 ---
-title: "BoB! - Bash on Board!"
-excerpt: "General purpose container for Kubernetes."
+title: "BoB!"
+excerpt: "Bash on Board! General purpose container for Kubernetes."
 header:
   image: /assets/images/unsplash-gallery-image-1.jpg
   teaser: assets/images/unsplash-gallery-image-1-th.jpg
