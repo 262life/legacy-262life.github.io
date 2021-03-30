@@ -31,5 +31,5 @@ This image should NOT be used as a general container as it is intentionally miss
 
 ## Licensing
 
-k8s_shortcuts is under the Apache 2.0 [License.](LICENSE)
+bob-ubuntu-image is under the Apache 2.0 [License.](https://github.com/262life/bob-ubuntu-image/LICENSE)
 

@@ -6,7 +6,7 @@ header:
   teaser: assets/images/unsplash-gallery-image-3-th.jpg
 sidebar:
   - title: "Role"
-    image: https://github.com/BobDotMe/artwork/raw/main/logos/BobLogo-color-logo-wo-hept.png
+    image: https://github.com/262life/artwork/raw/main/logos/BobLogo-color-logo-wo-hept.png
     image_alt: "logo"
     text: "Main User"
   - title: "Responsibilities"

@@ -31,7 +31,7 @@ For more details about the solutions currently supported by k8s_shortcuts, pleas
 
 ## Licensing
 
-k8s_shortcuts is under the Apache 2.0 [License.](LICENSE)
+k8s_shortcuts is under the Apache 2.0 [License.](https://github.com/262life/k8s_shortcuts/LICENSE)
 
 
 
