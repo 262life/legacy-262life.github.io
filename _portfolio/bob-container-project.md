@@ -6,11 +6,11 @@ header:
   teaser: assets/images/unsplash-gallery-image-1-th.jpg
 sidebar:
   - title: "Role"
-    image: http://placehold.it/350x250
+    image: https://github.com/BobDotMe/artwork/raw/main/logos/BobLogo-Color.png
     image_alt: "logo"
-    text: "Designer, Front-End Developer"
+    text: "Designer, Architect, Developer"
   - title: "Responsibilities"
-    text: "Reuters try PR stupid commenters should isn't a business model"
+    text: "Developed this idea from scratch a solely responsible for the project's direction"
 gallery:
   - url: /assets/images/unsplash-gallery-image-1.jpg
     image_path: assets/images/unsplash-gallery-image-1-th.jpg
