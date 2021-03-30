@@ -1,5 +1,4 @@
 ---
-BoB! - Bash on Board! - GeneraGeneral purpose container for Kubernetesl purpose container for Kubernetes
 title: "BoB! - Bash on Board!"
 excerpt: "General purpose container for Kubernetes."
 header:
