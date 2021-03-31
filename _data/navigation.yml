@@ -4,10 +4,10 @@ main:
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  - title: "by-example"
-    url: /_pages/
   - title: "Projects"
     url: /portfolio/
+  - title: "By-Example"
+    url: /_pages/
   - title: "Posts"
     url: /_posts/
   # - title: "Sitemap"

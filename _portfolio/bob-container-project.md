@@ -2,8 +2,8 @@
 title: "BoB!"
 excerpt: "Bash on Board! General purpose container for Kubernetes."
 header:
-  image: /assets/images/unsplash-gallery-image-1.jpg
-  teaser: assets/images/unsplash-gallery-image-1-th.jpg
+  image: /assets/images/bob-splash.jpg
+  teaser: assets/images/bob-splash.jpg
 sidebar:
   - title: "Role"
     image: https://github.com/BobDotMe/artwork/raw/main/logos/BobLogo-Color.png
