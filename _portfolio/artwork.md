@@ -6,7 +6,7 @@ header:
   teaser: assets/images/unsplash-gallery-image-3-th.jpg
 sidebar:
   - title: "Role"
-    image: https://262.life/assets/images/logo.png
+    image: https://262.life/assets/images/262_logo.png
     image_alt: "logo"
     text: "Main User"
   - title: "Responsibilities"
