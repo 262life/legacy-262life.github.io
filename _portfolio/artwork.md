@@ -2,11 +2,11 @@
 title: "Artwork"
 excerpt: "Artwork and Logos for various projects that are free to use but adhere to the License."
 header:
-  image: /assets/images/unsplash-gallery-image-3.jpg
-  teaser: assets/images/unsplash-gallery-image-3-th.jpg
+  image: /assets/images/mick-haupt-8tN0Uq0GjCs-unsplash_1065X717.jpg
+  teaser: assets/images/mick-haupt-8tN0Uq0GjCs-unsplash_640X431.jpg
 sidebar:
   - title: "Role"
-    image: https://262.life/assets/images/262_logo.png
+    image: https://262.life/assets/images/logo.png
     image_alt: "logo"
     text: "Main User"
   - title: "Responsibilities"
