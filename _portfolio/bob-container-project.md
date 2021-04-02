@@ -12,7 +12,7 @@ sidebar:
   - title: "Responsibilities"
     text: "Developed this idea from scratch a solely responsible for the project's direction"
 gallery:
-  - url: /ssets/images/christina-wocintechchat-com-glRqyWJgUeY-unsplash_1066X712.jpg
+  - url: /assets/images/christina-wocintechchat-com-glRqyWJgUeY-unsplash_1066X712.jpg
     image_path: /assets/images/christina-wocintechchat-com-glRqyWJgUeY-unsplash_640X427.jpg
     alt: "placeholder image 1"
   - url: /assets/images/unsplash-gallery-image-2.jpg
