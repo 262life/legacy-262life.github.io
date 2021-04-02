@@ -2,8 +2,8 @@
 title: "BoB!"
 excerpt: "Bash on Board! General purpose container for Kubernetes."
 header:
-  image: /assets/images/bob-splash.jpg
-  teaser: assets/images/bob-splash.jpg
+  image:  /assets/images/christina-wocintechchat-com-glRqyWJgUeY-unsplash_1066X712.jpg
+  teaser: /assets/images/christina-wocintechchat-com-glRqyWJgUeY-unsplash_640X427.jpg
 sidebar:
   - title: "Role"
     image: https://github.com/BobDotMe/artwork/raw/main/logos/BobLogo-Color.png
@@ -12,8 +12,8 @@ sidebar:
   - title: "Responsibilities"
     text: "Developed this idea from scratch a solely responsible for the project's direction"
 gallery:
-  - url: /assets/images/unsplash-gallery-image-1.jpg
-    image_path: assets/images/unsplash-gallery-image-1-th.jpg
+  - url: /ssets/images/christina-wocintechchat-com-glRqyWJgUeY-unsplash_1066X712.jpg
+    image_path: /assets/images/christina-wocintechchat-com-glRqyWJgUeY-unsplash_640X427.jpg
     alt: "placeholder image 1"
   - url: /assets/images/unsplash-gallery-image-2.jpg
     image_path: assets/images/unsplash-gallery-image-2-th.jpg
