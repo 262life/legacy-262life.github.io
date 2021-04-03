@@ -12,15 +12,22 @@ sidebar:
   - title: "Responsibilities"
     text: "Developed this idea from scratch a solely responsible for the project's direction"
 gallery:
-  - url: /assets/images/christina-wocintechchat-com-glRqyWJgUeY-unsplash_1066X712.jpg
-    image_path: assets/images/christina-wocintechchat-com-glRqyWJgUeY-unsplash_640X427.jpg
-    alt: "placeholder image 1"
-  - url: /assets/images/unsplash-gallery-image-2.jpg
-    image_path: assets/images/unsplash-gallery-image-2-th.jpg
-    alt: "placeholder image 2"
-  - url: /assets/images/unsplash-gallery-image-3.jpg
-    image_path: assets/images/unsplash-gallery-image-3-th.jpg
-    alt: "placeholder image 3"
+  - url: /assets/images/bob_image_1.png
+    image_path: assets/images/bob_image_1.png
+    alt: "bob image 1"
+  - url: /assets/images/bob_image_2.png
+    image_path: assets/images/bob_image_2.png
+    alt: "bob image 2"
+  - url: /assets/images/bob_image_3.png
+    image_path: assets/images/bob_image_3.png
+    alt: "bob image 3"
+  - url: /assets/images/bob_image_4.png
+    image_path: assets/images/bob_image_4.png
+    alt: "bob image 4"
+  - url: /assets/images/bob_image_5.png
+    image_path: assets/images/bob_image_5.png
+    alt: "bob image 5"
+  
 ---
 
 BoB! turns a simple container instanciation into a power support tool for general troubleshooting, service rendering, and performance evaluation. It does this by creating a core set services that house and manage the utilities as well as a super lightweight container to invoke in a pod.
