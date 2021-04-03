@@ -18,7 +18,7 @@ This image should NOT be used as a general container as it is intentionally miss
 ## Github 
 [Github](https://github.com/262life/bob-ubuntu-image)
 ## Licensing
-bob-ubuntu-image is under the Apache 2.0 [License.](https://github.com/262life/bob-ubuntu-image/blob/main/LICENSE.md)
+bob-ubuntu-image is under the Apache 2.0 [License.](https://github.com/262life/bob-ubuntu-image/blob/master/LICENSE.md)
 
 ![Hex.pm](https://img.shields.io/hexpm/l/apa)
 ![Twitter Follow](https://img.shields.io/twitter/follow/262life_bob?style=social)
