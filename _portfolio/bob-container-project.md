@@ -40,5 +40,5 @@ BoB! integrates deeply into cloud native environments leveraging extension point
 ## Github 
 [Github](https://github.com/262life/bob)
 ## Licensing
-BoB! is under the Apache 2.0 [License.](https://github.com/262life/bob/LICENSE.md)
+BoB! is under the Apache 2.0 [License.](https://github.com/262life/bob/blob/master/LICENSE.md)
 
