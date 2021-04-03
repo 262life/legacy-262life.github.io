@@ -6,7 +6,7 @@ header:
   teaser: assets/images/unsplash-gallery-image-2-th.jpg
 sidebar:
   - title: "Role"
-    image: https://github.com/BobDotMe/k8s_shortcuts/blob/master/K8-Shortcut.png
+    image: https://github.com/262life/k8s_shortcuts/raw/master/K8-Shortcut.png
     image_alt: "logo"
     text: "Designer, Architect, Developer"
   - title: "Responsibilities"
@@ -24,4 +24,3 @@ k8s_shortcuts is under the Apache 2.0 [License.](https://github.com/262life/k8s_
 
 ![Hex.pm](https://img.shields.io/hexpm/l/apa)
 ![Twitter Follow](https://img.shields.io/twitter/follow/262life_bob?style=social)
-
