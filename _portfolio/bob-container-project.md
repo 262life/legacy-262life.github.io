@@ -28,9 +28,10 @@ BoB! turns a simple container instanciation into a power support tool for genera
 BoB! integrates deeply into cloud native environments leveraging extension points and providing a seamless experience. For more details about the solutions currently supported by BoB!, please refer to the project status section below. We plan to continue adding support for many common functions required based on community demand and engagement in future releases. See our roadmap for more details.
 
 
-{% include gallery caption="This is a sample gallery to go along with this case study." %}
+{% include gallery caption="Screenshots" %}
 
+## Github 
+[Github](https://github.com/262life/bob)
 ## Licensing
-
-BoB! is under the Apache 2.0 [License.](https://github.com/bobdotme/bob/LICENSE.md)
+BoB! is under the Apache 2.0 [License.](https://github.com/262life/bob/LICENSE.md)
 
