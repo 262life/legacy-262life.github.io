@@ -29,11 +29,9 @@ gallery:
     alt: "bob image 5"
   
 ---
-
 BoB! turns a simple container instanciation into a power support tool for general troubleshooting, service rendering, and performance evaluation. It does this by creating a core set services that house and manage the utilities as well as a super lightweight container to invoke in a pod.
 
 BoB! integrates deeply into cloud native environments leveraging extension points and providing a seamless experience. For more details about the solutions currently supported by BoB!, please refer to the project status section below. We plan to continue adding support for many common functions required based on community demand and engagement in future releases. See our roadmap for more details.
-
 
 {% include gallery caption="Screenshots" %}
 
@@ -42,3 +40,4 @@ BoB! integrates deeply into cloud native environments leveraging extension point
 ## Licensing
 BoB! is under the Apache 2.0 [License.](https://github.com/262life/bob/blob/master/LICENSE.md)
 
+![Hex.pm](https://img.shields.io/hexpm/l/apa)
