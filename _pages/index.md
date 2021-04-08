@@ -10,7 +10,7 @@ related: false
 <div class="entries-{{ entries_layout }}">
 {% for page in site.pages %}
   {% if page.layout != 'post' %}  
-    {% if page.layout != 'collection' %}  
+    {% if page.layout == 'page' %}  
       <a href="{{ page.url }}">{{ page.title }}</a><br>
     {% endif %}
   {% endif %}
