@@ -1,3 +1,0 @@
-# ruth.md
-
- * test
