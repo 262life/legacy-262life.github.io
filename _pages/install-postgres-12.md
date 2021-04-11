@@ -1,7 +1,14 @@
 ---
-layout: page
+layout: single
+author_profile: true
 title:  "Install Postgres 12"
 summary: "This guide will walk you through the steps used to install PostgreSQL 12 on CentOS 7 / CentOS 8..."
+read_time: true
+comments: true
+share: false
+related: false
+collection: examples
+
 ---
 This guide will walk you through the steps used to install PostgreSQL 12 on CentOS 7 / CentOS 8?. PostgreSQL is an object-relational database management system based on POSTGRES 4.2. PostgreSQL 12 is available for Production use by Developers and Database Administrators.
 

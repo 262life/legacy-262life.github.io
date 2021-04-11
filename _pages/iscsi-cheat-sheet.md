@@ -1,7 +1,13 @@
 ---
-layout: page
+layout: single
+author_profile: true
 title:  "ISCSI Cheat Sheet"
 summary: "iscsiadm shortcuts..."
+read_time: true
+comments: true
+share: false
+related: false
+collection: examples
 ---
 
 As a host trying to access a iSCSI disk (iscsi-initiator) : 

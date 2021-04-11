@@ -1,7 +1,13 @@
 ---
-layout: page
+layout: single
+author_profile: true
 title:  "HAProxy on SELinux"
 summary: "HAProxy cannot bind socket..."
+read_time: true
+comments: true
+share: false
+related: false
+collection: examples
 ---
 
 
