@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title:  "HAProxy on SELinux"
 summary: "HAProxy cannot bind socket..."
 ---
