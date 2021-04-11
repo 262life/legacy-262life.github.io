@@ -7,7 +7,7 @@ read_time: true
 comments: true
 share: true
 related: false
-example: true
+collection: examples
 
 ---
 # SSH Server with CERTIFICATES
