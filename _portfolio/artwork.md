@@ -14,7 +14,7 @@ sidebar:
 ---
 A collection of artwork used in the projects
 ## Github 
-![Github](https://github.com/262life/artwork)
+[Github](https://github.com/262life/artwork)
 ## Licensing
 BoB! is under the Apache 2.0 [License.](https://github.com/262life/artwork/blob/main/LICENSE.md)
 
