@@ -1,8 +1,8 @@
 ---
 layout: page
 author_profile: true
-title:  "HAProxy on SELinux"
-summary: "HAProxy cannot bind socket..."
+title:  "SSH Server with CERTIFICATES"
+summary: "The documentation for OpenSSH certificates..."
 ---
 # SSH Server with CERTIFICATES
 
