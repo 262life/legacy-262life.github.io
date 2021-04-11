@@ -2,7 +2,7 @@
 title: "k8_shortcuts"
 excerpt: "This is a collection of kubectl and bash/zsh shortcuts to make interactions with Kubernetes a bit easier."
 header:
-  image: /assets/images/juan-gomez-kt-wA0GDFq8-unsplash_1066X706.jpg
+  image: /assets/images/juan-gomez-kt-wA0GDFq8-unsplash_800X530.jpg
   teaser: /assets/images/juan-gomez-kt-wA0GDFq8-unsplash_640X424.jpg
 sidebar:
   - title: "Role"

@@ -2,7 +2,7 @@
 title: "BoB!"
 excerpt: "Bash on Board! General purpose container for Kubernetes."
 header:
-  image:  /assets/images/christina-wocintechchat-com-glRqyWJgUeY-unsplash_1066X712.jpg
+  image:  /assets/images/christina-wocintechchat-com-glRqyWJgUeY-unsplash_800X534.jpg
   teaser: /assets/images/christina-wocintechchat-com-glRqyWJgUeY-unsplash_640X427.jpg
 sidebar:
   - title: "Role"

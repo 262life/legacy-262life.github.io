@@ -2,7 +2,7 @@
 title: "Artwork"
 excerpt: "Artwork and Logos for various projects that are free to use but adhere to the License."
 header:
-  image: /assets/images/mick-haupt-8tN0Uq0GjCs-unsplash_1065X717.jpg
+  image: /assets/images/mick-haupt-8tN0Uq0GjCs-unsplash_800X539.jpg
   teaser: assets/images/mick-haupt-8tN0Uq0GjCs-unsplash_640X431.jpg
 sidebar:
   - title: "Purpose"

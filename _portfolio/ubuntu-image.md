@@ -2,7 +2,7 @@
 title: "bob-ubuntu-image" 
 excerpt: "Open source base binary image for the BoB! project."
 header:
-  image: /assets/images/alex-kulikov-BrunIOLQMfQ-unsplash_1065X799.jpg
+  image: /assets/images/alex-kulikov-BrunIOLQMfQ-unsplash_718X539.jpg
   teaser: /assets/images/alex-kulikov-BrunIOLQMfQ-unsplash_640X480.jpg
 sidebar:
   - title: "Project"
