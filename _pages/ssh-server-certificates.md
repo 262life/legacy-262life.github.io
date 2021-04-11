@@ -3,6 +3,12 @@ layout: single
 author_profile: true
 title:  "SSH Server with CERTIFICATES"
 summary: "The documentation for OpenSSH certificates..."
+read_time: true
+comments: true
+share: true
+related: false
+example: true
+
 ---
 # SSH Server with CERTIFICATES
 
