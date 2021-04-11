@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single
 author_profile: true
 title:  "SSH Server with CERTIFICATES"
 summary: "The documentation for OpenSSH certificates..."

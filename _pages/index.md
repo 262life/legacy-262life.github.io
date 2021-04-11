@@ -10,8 +10,8 @@ related: false
 <div class="entries-{{ entries_layout }}">
 {% for page in site.pages %}
   {% if page.layout != 'post' %}  
-    {% if page.layout == 'page' %}  
-      <a href="{{ page.url }} style="text-decoration: none;"">{{ page.title }}</a><br>
+    {% if page.layout == 'page' || page.layout == 'single' %}  
+      <a href="{{ page.url }}" style="text-decoration: none;">{{ page.title }}</a><br>
     {% endif %}
   {% endif %}
 {% endfor %}
