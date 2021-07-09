@@ -11,14 +11,12 @@ excerpt_separator: <!--more-->
 This post will give you the same two minute introduction about tmux and its possibilities, followed by the typical 10 minute hands-on guide to set up and get to know tmux yourself. If you’ve got 10 minutes to spare and finally want to be more proficient with tmux: read on! Otherwise, just us the /quick primer/
 
 ## TLDR; A quick primer…..
-* sudo yum install tux
-* Quick Test
 ```
+sudo yum install tux
 tmux new -s k8s
 ls -lR /
 # Ctrl-B then D to disconnect. (Tested disconnecting VPN too)
 tmux attach -t k8s
-
 ```
 ## What’s tmux?
 tmux’s authors describe it as a /terminal multiplexer/. Behind this fancy term hides a simple concept: Within one terminal window you can open multiple windows and split-views (called /“panes”/ in tmux lingo). Each pane will contain its own, independently running terminal instance. This allows you to have multiple terminal commands and applications running visually next to each other without the need to open multiple terminal emulator windows.
@@ -42,13 +40,13 @@ Fortunately installing tmux is pretty straightforward on most distributions a si
 For your first session simply start tmux with a new session:
 tmux
 This will create a new tmux session with a nice all-green status bar at the bottom:
-[image:/assets/images/tmux/tmux_blank.png]
+(/assets/images/tmux/tmux_blank.png)
 The status bar is an important part of tmux. Apart from the currently opened windows (on the left) it also shows some system information like date and time (on the right). The status bar can also be customized and I’ve seen some really fancy stuff around (upcoming calendar events, battery status, to name a few) but this is something we’ll leave for later.
 ### Splitting Panes
 Now that we’ve created our first session we can get a feeling for panes. When you create a new session, tmux will by default start with one window and a single panel inside. We want a nice split-screen, so let’s split this bad boy.
 All commands in tmux are triggered by a *prefix key* followed by a *command key* (quite similar to emacs). By default, tmux uses C-b as prefix key. This notation might read a little weird if you’re not used to it. In this emacs notation C- means “press and hold the Ctrl key”. Thus C-b simply means press the Ctrl and b keys at the same time.
 The shortcut to split panes into a left and a right pane is C-b %. Remembering what I’ve just told you about tmux’s sequence of *prefix* and *command key* this means to split your single pane into a left and a right pane you press Ctrl and b at the same time, release both, and then type the % key. Voilà! You’ve just invoked your first tmux command and split your pane in two.
-[image:/assets/images/tmux/tmux_split.png]
+(/assets/images/tmux/tmux_split.png)
 Where there’s a split into left and right, there’s also a split into top and bottom pane. To split a pane into top and bottom panes use the C-b “ shortcut.
 ### Navigating Panes
 Right now we’re trapped in the newly created pane. But we really really want to go back to the left one. Easy peasy: Switching to a different pane uses the C-b <arrow key> shortcut, where <arrow key> is the arrow key pointing to the pane you want to switch to. In our case we want to switch to the panel on the left so it’s C-b left for us. Just once more, so that we fully understand this: This means you press Ctrl and b (your prefix) followed by the left arrow key to get to the pane on the left.
@@ -58,7 +56,7 @@ Closing a pane is as simple as closing a regular terminal session. Either type e
 ### Creating Windows
 Windows in tmux can be compared to creating new virtual desktops; if you’ve ever worked with one of the major Linux deskop environments (KDE, Gnome) you’ll hopefully find this analogy helpful.
 Creating new windows is as easy as typing C-b c (one last time: that’s Ctrl and b at once, then c). The new window will then be presented to you in tmux’s status bar.
-[image:/assets/images/tmux/tmux_window.png]
+(/assets/images/tmux/tmux_window.png)
 You can now divide the pane in your new window as you like. Or don’t. That’s up to you.
 To switch to the /previous/ window (according to the order in your status bar) use C-b p, to switch to the /next/ window use C-b n. If you’ve created many windows you might find it useful to go to a window directly by typing its number (the status bar will tell you which window has which number), just use C-b <number> where <number> is the number in front of the window’s name in your status bar.
 ### Session Handling
