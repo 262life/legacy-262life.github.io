@@ -40,7 +40,7 @@ Fortunately installing tmux is pretty straightforward on most distributions a si
 For your first session simply start tmux with a new session:
 tmux
 This will create a new tmux session with a nice all-green status bar at the bottom:
-(/assets/images/tmux/tmux_blank.png)
+![tmux entry point example](/assets/images/tmux/tmux_blank.png)
 The status bar is an important part of tmux. Apart from the currently opened windows (on the left) it also shows some system information like date and time (on the right). The status bar can also be customized and I’ve seen some really fancy stuff around (upcoming calendar events, battery status, to name a few) but this is something we’ll leave for later.
 ### Splitting Panes
 Now that we’ve created our first session we can get a feeling for panes. When you create a new session, tmux will by default start with one window and a single panel inside. We want a nice split-screen, so let’s split this bad boy.
