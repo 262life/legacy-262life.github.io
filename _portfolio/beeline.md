@@ -6,7 +6,7 @@ header:
   teaser: /assets/images/juan-gomez-kt-wA0GDFq8-unsplash_640X424.jpg
 sidebar:
   - title: "Role"
-    image: https://github.com/262life/beeline/raw/master/K8-Shortcut.png
+    image: https://github.com/262life/beeline/raw/master/K8-Beeline.png
     image_alt: "logo"
     text: "Designer, Architect, Developer"
   - title: "Responsibilities"
