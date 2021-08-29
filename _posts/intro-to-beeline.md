@@ -121,15 +121,23 @@ users:
 ```
 As you can see, it's easy to read as a single YAML file therefore quote effect.  How do you make use?  Just add one or many of these files one for each cluster in your $HOME/.kube file and give it a .cfg extension and that's all you need to do.  Beeline will take care of the rest.
 
-####Note:  Do NOT remove the config file as it will be used as well.
+<span style="color:lightgreen">*Note:  Do NOT remove the config file as it will be used as well.*</span>
 
 ## Practical Examples
 
 Set context and namespace
 ```applescript
-[B:cities:kube-system] liottar:/Users/liottar$ kc cities rook-ceph
+[B:cities:kube-system] liottar:/Users/liottar/projects/262life/beeline$ kc cities rook-ceph
+
+Cluster    : Cities Cluster / Location: St. Augustine FL
+Context    : cities
+Namespace  : rook-ceph
+
 Context "cities" modified.
 Property "current-context" set.
+Context "cities" modified.
+Property "current-context" set.
+[B:cities:rook-ceph] liottar:/Users/liottar/projects/262life/beeline$
 ```
 
 Get context and namespace
