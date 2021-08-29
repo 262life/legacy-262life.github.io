@@ -13,7 +13,7 @@ I absolutely love opensource and believe 100% that it's the best way to develop 
 This post will give you the same two minute introduction about Beeline and its possibilities, followed by the typical 10 minute hands-on guide to set up and get to know Beeline yourself. If you’ve got 10 minutes to spare and finally want to be more proficient with Beeline: read on! Otherwise, if you already use zsh and aleady installed [oh-my-zsh](https://ohmyz.sh/), just us the /quick primer/
 
 ## TLDR; This is the lazy version. . .
-```
+```applescript
 #####  Setup Beeline
 
 ## Defaults if you like
@@ -38,20 +38,20 @@ This has been tested on macOS, Ubuntu, and Windows WSL2.
 
 I highly recommend changing your login shell to zsh.  It is *now* the <span style="color:lightgreen">*macOS*</span> default.  For Ubuntu or WSL2, the following will install zsh.  If prompted, choose any defaults.
 
-```
+```applescript
 sudo apt install zsh
 ```
 
 and to enable autocomplete for zsh on aly of the supported environments, install [oh-my-zsh](https://ohmyz.sh/) as follows:
 
-```
+```applescript
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 To enable these shortcuts you must source them into your shell.  This is dependent on the shell you are using.
 You can either download the desired version you would like or if you are lazy like me do something like this if you use zsh:
 
-```
+```applescript
 #####  Setup Beeline
 
 ## Defaults if you like
@@ -75,13 +75,28 @@ Now, review the [usage documentation](https://github.com/262life/beeline/blob/ma
 
 At the heart of Beeline are the two most important and essential shortcuts; *kc* and *kn*.  These control the context of the session you are in.  Wait?  Did I say session?  kubectl sets the contexts in the config file and if multiple windows are open as the same user, it's shared right?  Well with Beeline that is not the case!  You can have multiple windows open or even multiple shells and the context stays with the current shell!  Cool right?
 
+Example: 
+```applescript
+[B:cities:kube-system] liottar:/Users/liottar$ kc cities rook-ceph
+Context "cities" modified.
+Property "current-context" set.
+[B:cities:kube-system] liottar:/Users/liottar$ kn kube-system
+
+Cluster    : Cities Cluster / Location: St. Augustine FL
+Context    : cities
+Namespace  : kube-system
+
+Context "cities" modified.
+Property "current-context" set.
+```
+
 ### About the config files
 
 If you have a number of kubernete clusters to manage like I do, one of the more complicated aspects of kubectl becomes managing the config files.  This file can become long and extremely hard to read even for expert users.
 
 Beeline takes care of this allowing you to keep a seperate config file for each cluster like this example:
 
-```
+```yaml
 apiVersion: v1
 clusters:
 - cluster:
@@ -110,10 +125,95 @@ As you can see, it's easy to read as a single YAML file therefore quote effect. 
 
 ## Practcal Examples
 
+Set context and namespace
+```applescript
+[B:cities:kube-system] liottar:/Users/liottar$ kc cities rook-ceph
+Context "cities" modified.
+Property "current-context" set.
+```
 
+Get context and namespace
+```applescript
+[B:cities:kube-system] liottar:/Users/liottar$ kc
 
+Cluster    : Cities Cluster / Location: St. Augustine FL
+Context    : cities
+Namespace  : kube-system
 
+Context "cities" modified.
+Property "current-context" set.
+```
 
+Get all pods with wide output
+```applescript
+[B:cities:rook-ceph] liottar:/Users/liottar$ kgp -owide
+NAME                                                     READY   STATUS      RESTARTS   AGE   IP              NODE       NOMINATED NODE   READINESS GATES
+csi-cephfsplugin-2xt6f                                   3/3     Running     3          55d   192.168.1.241   moscow     <none>           <none>
+csi-cephfsplugin-provisioner-78d66674d8-fxkk4            6/6     Running     0          55d   10.42.2.11      florence   <none>           <none>
+csi-cephfsplugin-provisioner-78d66674d8-qqvvh            6/6     Running     0          55d   10.42.0.20      miami      <none>           <none>
+csi-cephfsplugin-rhsj2                                   3/3     Running     3          55d   192.168.1.243   miami      <none>           <none>
+csi-cephfsplugin-sgwmj                                   3/3     Running     3          55d   192.168.1.242   florence   <none>           <none>
+csi-rbdplugin-68x8h                                      3/3     Running     3          55d   192.168.1.243   miami      <none>           <none>
+csi-rbdplugin-j5sqc                                      3/3     Running     3          55d   192.168.1.242   florence   <none>           <none>
+csi-rbdplugin-m5ccj                                      3/3     Running     3          55d   192.168.1.241   moscow     <none>           <none>
+csi-rbdplugin-provisioner-687cf777ff-4t8cv               6/6     Running     6          55d   10.42.1.131     moscow     <none>           <none>
+csi-rbdplugin-provisioner-687cf777ff-ddvzq               6/6     Running     0          55d   10.42.0.21      miami      <none>           <none>
+rook-ceph-csi-detect-version-v9ggr                       0/1     Completed   0          54d   10.42.0.19      miami      <none>           <none>
+rook-ceph-mds-rsliotta-fs-a-5db685547d-z6mz2             1/1     Running     332        67d   10.42.1.123     moscow     <none>           <none>
+rook-ceph-mds-rsliotta-fs-b-588755bd54-pt75s             1/1     Running     0          55d   10.42.2.15      florence   <none>           <none>
+rook-ceph-mgr-a-69f7b69cc-bb4vj                          1/1     Running     275        67d   10.42.1.124     moscow     <none>           <none>
+rook-ceph-mon-c-7dbbcc9769-s9gcg                         1/1     Running     0          55d   10.42.0.16      miami      <none>           <none>
+rook-ceph-mon-d-66787cb764-lqhm7                         1/1     Running     1          58d   10.42.1.129     moscow     <none>           <none>
+rook-ceph-operator-785bf4fff4-6sr42                      1/1     Running     1          55d   10.42.1.130     moscow     <none>           <none>
+rook-ceph-osd-0-685bd594cd-6fnx7                         1/1     Running     0          55d   10.42.2.21      florence   <none>           <none>
+rook-ceph-osd-1-6d4dd94666-s5jz5                         1/1     Running     0          55d   10.42.2.14      florence   <none>           <none>
+rook-ceph-osd-2-677478c46b-djd2p                         1/1     Running     0          55d   10.42.2.13      florence   <none>           <none>
+rook-ceph-osd-3-6f8b9c845f-tdt2c                         1/1     Running     0          55d   10.42.2.18      florence   <none>           <none>
+rook-ceph-osd-4-565b49d85c-cxtlb                         1/1     Running     0          55d   10.42.2.22      florence   <none>           <none>
+rook-ceph-osd-5-65464f9b7d-l7q4j                         1/1     Running     0          55d   10.42.2.12      florence   <none>           <none>
+rook-ceph-osd-6-9978758bf-jkdpl                          1/1     Running     0          55d   10.42.2.10      florence   <none>           <none>
+rook-ceph-osd-7-58df8bbdc4-jt98j                         1/1     Running     0          55d   10.42.2.20      florence   <none>           <none>
+rook-ceph-osd-prepare-florence-25x69                     0/1     Completed   0          53d   10.42.2.25      florence   <none>           <none>
+rook-ceph-osd-prepare-miami-n6s6z                        0/1     Completed   0          53d   10.42.0.28      miami      <none>           <none>
+rook-ceph-osd-prepare-moscow-kbcwz                       0/1     Completed   0          53d   10.42.1.137     moscow     <none>           <none>
+rook-ceph-rgw-rsliotta-object-store-a-799f6644d4-7ffkk   1/1     Running     340        67d   10.42.1.118     moscow     <none>           <none>
+rook-ceph-tools-6bc7c4f9fc-tx96t                         1/1     Running     1          67d   10.42.1.120     moscow     <none>           <none>
+```
+
+Get all pods with wide output but only names with osd in them
+```applescript
+[B:cities:rook-ceph] liottar:/Users/liottar$ kf pod 'osd'
+NAME                                                     READY   STATUS      RESTARTS   AGE
+rook-ceph-osd-0-685bd594cd-6fnx7                         1/1     Running     0          55d
+rook-ceph-osd-1-6d4dd94666-s5jz5                         1/1     Running     0          55d
+rook-ceph-osd-2-677478c46b-djd2p                         1/1     Running     0          55d
+rook-ceph-osd-3-6f8b9c845f-tdt2c                         1/1     Running     0          55d
+rook-ceph-osd-4-565b49d85c-cxtlb                         1/1     Running     0          55d
+rook-ceph-osd-5-65464f9b7d-l7q4j                         1/1     Running     0          55d
+rook-ceph-osd-6-9978758bf-jkdpl                          1/1     Running     0          55d
+rook-ceph-osd-7-58df8bbdc4-jt98j                         1/1     Running     0          55d
+rook-ceph-osd-prepare-florence-25x69                     0/1     Completed   0          53d
+rook-ceph-osd-prepare-miami-n6s6z                        0/1     Completed   0          53d
+rook-ceph-osd-prepare-moscow-kbcwz                       0/1     Completed   0          53d
+```
+
+or the same with a wide output by creating a list with the *kfl* utility function to pass to *kgp*
+```applescript
+[B:cities:rook-ceph] liottar:/Users/liottar$ kgp -owide $(kfl pod 'osd')
+NAME                                   READY   STATUS      RESTARTS   AGE   IP            NODE       NOMINATED NODE   READINESS GATES
+rook-ceph-osd-0-685bd594cd-6fnx7       1/1     Running     0          55d   10.42.2.21    florence   <none>           <none>
+rook-ceph-osd-1-6d4dd94666-s5jz5       1/1     Running     0          55d   10.42.2.14    florence   <none>           <none>
+rook-ceph-osd-2-677478c46b-djd2p       1/1     Running     0          55d   10.42.2.13    florence   <none>           <none>
+rook-ceph-osd-3-6f8b9c845f-tdt2c       1/1     Running     0          55d   10.42.2.18    florence   <none>           <none>
+rook-ceph-osd-4-565b49d85c-cxtlb       1/1     Running     0          55d   10.42.2.22    florence   <none>           <none>
+rook-ceph-osd-5-65464f9b7d-l7q4j       1/1     Running     0          55d   10.42.2.12    florence   <none>           <none>
+rook-ceph-osd-6-9978758bf-jkdpl        1/1     Running     0          55d   10.42.2.10    florence   <none>           <none>
+rook-ceph-osd-7-58df8bbdc4-jt98j       1/1     Running     0          55d   10.42.2.20    florence   <none>           <none>
+rook-ceph-osd-prepare-florence-25x69   0/1     Completed   0          53d   10.42.2.25    florence   <none>           <none>
+rook-ceph-osd-prepare-miami-n6s6z      0/1     Completed   0          53d   10.42.0.28    miami      <none>           <none>
+rook-ceph-osd-prepare-moscow-kbcwz     0/1     Completed   0          53d   10.42.1.137   moscow     <none>           <none>
+```
+As you see, you can combine the commands to make more shortcuts for yourself!
 
 
 
