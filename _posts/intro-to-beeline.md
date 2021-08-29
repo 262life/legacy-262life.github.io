@@ -223,7 +223,7 @@ rook-ceph-osd-prepare-moscow-kbcwz     0/1     Completed   0          53d   10.4
 ```
 As you see, you can combine the commands to make more shortcuts for yourself!
 
-
+In summary, I hope this helps you get off to a good start with Beeline!  
 
 
 
