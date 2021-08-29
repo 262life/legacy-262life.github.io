@@ -121,9 +121,9 @@ users:
 ```
 As you can see, it's easy to read as a single YAML file therefore quote effect.  How do you make use?  Just add one or many of these files one for each cluster in your $HOME/.kube file and give it a .cfg extension and that's all you need to do.  Beeline will take care of the rest.
 
-**note:  Do NOT remove the config file as it will be used as well.**
+####Note:  Do NOT remove the config file as it will be used as well.
 
-## Practcal Examples
+## Practical Examples
 
 Set context and namespace
 ```applescript
