@@ -228,6 +228,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-crosspost-to-medium
 
 # Archives
 #  Type
