@@ -2,6 +2,7 @@
 layout: post
 title:  "Beeline"
 summary: "Quick and Easy guide to Beeline shortcuts for kubectl"
+image: https://github.com/262life/beeline/raw/master/K8-Beeline.png
 header:
   image: /assets/images/twitter-card.png
 excerpt_separator: <!--more-->
