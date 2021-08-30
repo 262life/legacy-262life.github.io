@@ -219,7 +219,6 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
-  - jekyll-crosspost-to-medium
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -228,7 +227,6 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
-  - jekyll-crosspost-to-medium
 
 # Archives
 #  Type
