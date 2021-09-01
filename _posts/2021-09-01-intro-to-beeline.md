@@ -8,12 +8,10 @@ excerpt_separator: <!--more-->
 ---
 <img align="left" src="/assets/images/K8-Beeline.png">
 # Quick and Easy guide to Beeline shortcuts for kubectl
-
 <!--more-->
+I absolutely love open-source and believe 100% that it's the best way to develop software.  In the last few years I dedicated and invested much of my time in Kubernetes and containerization.  I love working with the command line. Seriously I don't thing there is a more effective way to interact in a computing environment for development, administration or just outright tinkering.  Don't get me wrong, I have nothing against UI/GUI and they are great in a pinch and a great way to familiarize yourself with an application.  I use kubectl quite extensively and eventually the typing becomes a bit exhausting for repetitive tasks.  There are lot's of extensions available for kubectl but I wanted to create something straight forward and easy to use and even extend if you want to.  It's called Beeline and it is a number of shortcuts and aliases for zsh and bash.  It was designed to use on the command-line, integrated with autocomplete, and also in a bash script that is easy to read and follow for many procedural tasks like installing a helm chart.
 
-I absolutely love opensource and believe 100% that it's the best way to develop software.  In the last few years I dedicated and invested much of my time in Kubernetes and containerization.  I love working with the command line. Seriously I don't thing there is a more effective way to interact in a computing environment for development, administration or just outright tinkering.  Don't get me wrong, I have nothing against UI/GUI and they are great in a pinch and a great way to familiarizse yourself with an application.  I use kubectl quite extensively and eventually the typing becomes a bit exhausing for repetive tasks.  There are lot's of extensions available for kubectl but I wanted to create something straight forward and easy to use and even extend if you want to.  It's called Beeline and it is a number of shortcuts and aliases for zsh and bash.  It was designed to use on the commandline comeplete with autocomplete and also in a bash script that is easy to read and follow for many procedural scripts like installing a helm chart.
-
-This post will give you the same two minute introduction about Beeline and its possibilities, followed by the typical 10 minute hands-on guide to set up and get to know Beeline yourself. If you’ve got 10 minutes to spare and finally want to be more proficient with Beeline: read on! Otherwise, if you already use zsh and aleady installed [oh-my-zsh](https://ohmyz.sh/), just us the /quick primer/
+This post will give you the same two minute introduction about Beeline and its possibilities, followed by the typical 10 minute hands-on guide to set up and get to know Beeline yourself. If you’ve got 10 minutes to spare and finally want to be more proficient with Beeline: read on! Otherwise, if you already use zsh and already installed [oh-my-zsh](https://ohmyz.sh/), just us the /quick primer/
 
 ## TLDR; This is the lazy version. . .
 ```applescript
@@ -45,7 +43,7 @@ I highly recommend changing your login shell to zsh.  It is *now* the <span styl
 sudo apt install zsh
 ```
 
-and to enable autocomplete for zsh on aly of the supported environments, install [oh-my-zsh](https://ohmyz.sh/) as follows:
+and to enable autocomplete for zsh on all of the supported environments, install [oh-my-zsh](https://ohmyz.sh/) as follows:
 
 ```applescript
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -95,9 +93,9 @@ Property "current-context" set.
 
 ### About the config files
 
-If you have a number of kubernete clusters to manage like I do, one of the more complicated aspects of kubectl becomes managing the config files.  This file can become long and extremely hard to read even for expert users.
+If you have a number of kubernetes clusters to manage like I do, one of the more complicated aspects of kubectl becomes managing the config files.  This file can become long and extremely hard to read even for expert users.
 
-Beeline takes care of this allowing you to keep a seperate config file for each cluster like this example:
+Beeline takes care of this allowing you to keep a separate config file for each cluster like this example:
 
 ```yaml
 apiVersion: v1
