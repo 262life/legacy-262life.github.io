@@ -3,7 +3,7 @@ layout: post
 title:  "tmux"
 summary: "Quick and Easy guide to tmux"
 header:
-  image: /assets/images/twitter-card.png
+  teaser: /assets/images/twitter-card.png
 excerpt_separator: <!--more-->
 ---
 # Quick and Easy Guide to tmux
