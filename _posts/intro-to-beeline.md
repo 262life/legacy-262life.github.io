@@ -7,7 +7,8 @@ header:
   xxximage: /assets/images/K8-Beeline.png
 excerpt_separator: <!--more-->
 ---
-![Beeline](/assets/images/K8-Beeline.png)
+<img align="left" src="/assets/images/K8-Beeline.png">
+#![Beeline](/assets/images/K8-Beeline.png)
 # Quick and Easy guide to Beeline shortcuts for kubectl
 
 I absolutely love opensource and believe 100% that it's the best way to develop software.  In the last few years I dedicated and invested much of my time in Kubernetes and containerization.  I love working with the command line. Seriously I don't thing there is a more effective way to interact in a computing environment for development, administration or just outright tinkering.  Don't get me wrong, I have nothing against UI/GUI and they are great in a pinch and a great way to familiarizse yourself with an application.  I use kubectl quite extensively and eventually the typing becomes a bit exhausing for repetive tasks.  There are lot's of extensions available for kubectl but I wanted to create something straight forward and easy to use and even extend if you want to.  It's called Beeline and it is a number of shortcuts and aliases for zsh and bash.  It was designed to use on the commandline comeplete with autocomplete and also in a bash script that is easy to read and follow for many procedural scripts like installing a helm chart.
