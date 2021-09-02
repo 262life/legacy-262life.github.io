@@ -2,7 +2,7 @@
 title: "bob-ubuntu-image" 
 excerpt: "Open source base binary image for the BoB! project."
 header:
-  image: /assets/images/alex-kulikov-BrunIOLQMfQ-unsplash_718X539.jpg
+  xxximage: /assets/images/alex-kulikov-BrunIOLQMfQ-unsplash_718X539.jpg
   teaser: /assets/images/alex-kulikov-BrunIOLQMfQ-unsplash_640X480.jpg
 sidebar:
   - title: "Project"
@@ -12,6 +12,7 @@ sidebar:
   - title: "Purpose"
     text: "Developed this idea from scratch a solely responsible for the project's direction"
 ---
+<img align="left" src="/assets/images/alex-kulikov-BrunIOLQMfQ-unsplash_718X539.jpg">
 bob-ubuntu-image is an open source base binary image to build from-scratch docker containers for the BoB! repository.
 
 This image should NOT be used as a general container as it is intentionally missing Linux components.

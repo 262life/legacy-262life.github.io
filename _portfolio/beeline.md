@@ -12,6 +12,7 @@ sidebar:
   - title: "Responsibilities"
     text: "Developed this idea from scratch a solely responsible for the project's direction"
 ---
+<img align="left" src="https://github.com/262life/beeline/raw/master/K8-Beeline.png">
 
 beeline integrates into your bash or zsh shell to provide a number of useful shortcuts as well as the ability to keep individual kubectl config files for each cluster. The makes mangaging the configs much easier to read and manage in the end.
 
