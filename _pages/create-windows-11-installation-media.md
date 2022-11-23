@@ -39,7 +39,7 @@ brew install wimlib
 
 You might get an error message saying **command not found:brew**, you may also see two commands in Terminal right at the end of the  previous Homebrew installation. Enter the commands to activate Homebrew, followed by he command above again to get it working successfully.
 
-​       ![Commands to Activate HomeBrew](../assets/images/Windows-10-Bootable-Disk-Mac-Install-Homebrew.png)  
+​       ![Commands to Activate HomeBrew](../assets/images/Windows-10-Bootable-Disk-Mac-Homebrew-Extra-Commands.png)  
 
 
 
