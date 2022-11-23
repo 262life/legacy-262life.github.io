@@ -12,8 +12,6 @@ collection: examples
 
 ---
 
-#  Create Windows 11 Bootable Disk Using Terminal (M1/M2 Macs)
-
 The second method we'll cover today involves using Terminal. The  process is relatively simple; however, a limitation of this method is  the issue of the installer being 5.2GB. You cannot burn a file bigger  than 4GB on a FAT32 formatted drive, which is the only format that works with both Windows and macOS.
 
 A workaround for this is to split the installer into smaller files,  which requires the installation of a package manager, wimlib, that is  installed through Homebrew. This will split the Windows installer file  while creating the bootable disk.

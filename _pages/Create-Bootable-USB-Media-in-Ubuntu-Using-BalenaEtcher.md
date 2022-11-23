@@ -11,10 +11,6 @@ collection: examples
 
 ---
 
-# Create Bootable USB Media in Ubuntu Using BalenaEtcher
-
-
-
 Coming from Windows, RUFUS application has been the hot chick in town when it  comes to creating a bootable USB. But RUFUS only supports Windows and  Mac.
 
 So if you are using Linux distributions, RUFUS is not the way to go. But  fear not. Just as the case with almost every other tasks, popular Linux  distros such as Ubuntu has never failed to meet the user demands. Same  is the situation when you need to convert ISO to bootable USB Media in  Ubuntu, Linux Mint, or any Debian distros.
