@@ -18,25 +18,25 @@ The latest versions of Raspberry Pi OS (as of April 29 2021 or later) have many 
 
 3\. **Launch Raspberry Pi Imager and under Operating System scroll down to Misc Utility Images and left click to open the next menu.**
 
-![b6f9d7442734267ae0033855ba79076e.png](/Users/liottar/projects/262life/262life.github.io/Typora/f4d127213a90496287a54b3c4fb198ab.png)
+![b6f9d7442734267ae0033855ba79076e.png](../assets/images/f4d127213a90496287a54b3c4fb198ab.png)
 
 (Image credit: Tom's Hardware)
 
 4\. **Select Bootloader and then Select USB Boot.** This will return us to the main menu.
 
-![70511ddba6738aadf43a67ff3ca96c83.png](/Users/liottar/projects/262life/262life.github.io/Typora/bcaf49f1621d499aa7f965c999a09dc6.png)
+![70511ddba6738aadf43a67ff3ca96c83.png](../assets/images/bcaf49f1621d499aa7f965c999a09dc6.png)
 
 (Image credit: Tom’s Hardware)
 
 5\. **Under Storage click on the button and select the micro SD card.** Double check that you have the right drive before proceeding.
 
-![bcb28992785824b30990340ae123b96a.png](/Users/liottar/projects/262life/262life.github.io/Typora/bcffa68eee3c4c938089e89a0f9fb698.png)
+![bcb28992785824b30990340ae123b96a.png](../assets/images/bcffa68eee3c4c938089e89a0f9fb698.png)
 
 (Image credit: Tom's Hardware)
 
 6\. **Click on Write** to download and write a configuration image to the micro SD card. When done remove the card from your computer.
 
-![1de7a3bb32e7625103e92cb2e1e8c1d9.png](/Users/liottar/projects/262life/262life.github.io/Typora/aa3f7524928e48d49db5d45cb9acd7f5.png)
+![1de7a3bb32e7625103e92cb2e1e8c1d9.png](../assets/images/aa3f7524928e48d49db5d45cb9acd7f5.png)
 
 (Image credit: Tom's Hardware)
 
