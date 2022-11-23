@@ -1,4 +1,18 @@
-##  Create Windows 11 Bootable Disk Using Terminal (M1/M2 Macs)
+---
+layout: single
+author_profile: true
+title:  "Create Windows 11 Bootable Disk Using Terminal (M1/M2 Macs)"
+summary: "Create windows 11 bootable USB media the easy way...."
+read_time: true
+comments: true
+share: false
+related: false
+collection: examples
+
+
+---
+
+#  Create Windows 11 Bootable Disk Using Terminal (M1/M2 Macs)
 
 The second method we'll cover today involves using Terminal. The  process is relatively simple; however, a limitation of this method is  the issue of the installer being 5.2GB. You cannot burn a file bigger  than 4GB on a FAT32 formatted drive, which is the only format that works with both Windows and macOS.
 
@@ -11,7 +25,7 @@ curl -fsSL -o install.sh https://raw.githubusercontent.com/Homebrew/install/HEAD
 /bin/bash install.sh
 ```
 
-​       ![Install HomeBrew Using Terminal](/Users/liottar/projects/262life/262life.github.io/Typora/Windows-10-Bootable-Disk-Mac-Install-Homebrew.png)  
+​       ![Install HomeBrew Using Terminal](../assets/images/Windows-10-Bootable-Disk-Mac-Install-Homebrew.png)  
 
  This process will download and install Xcode before installing  Homebrew. Xcode is an integrated development environment (IDE) that is  comprised of software development tools for macOS. The process may take a few minutes to complete.
 
@@ -25,7 +39,7 @@ brew install wimlib
 
 You might get an error message saying **command not found:brew**, you may also see two commands in Terminal right at the end of the  previous Homebrew installation. Enter the commands to activate Homebrew, followed by he command above again to get it working successfully.
 
-​       ![Commands to Activate HomeBrew](/Users/liottar/projects/262life/262life.github.io/Typora/Windows-10-Bootable-Disk-Mac-Install-Homebrew.jpg)  
+​       ![Commands to Activate HomeBrew](../assets/images/Windows-10-Bootable-Disk-Mac-Install-Homebrew.png)  
 
 
 
@@ -45,11 +59,9 @@ Use the following command to format the USB stick in Terminal (replace **disk2**
 diskutil eraseDisk MS-DOS WINDOWS11 GPT /dev/disk2
 ```
 
-Terminal should now format your disk and rename it as WINDOWS11.       ![Format Disk using Terminal](/Users/liottar/projects/262life/262life.github.io/Typora/Create-Windows-11-Bootable-Disk-Diskutil.png )  
+Terminal should now format your disk and rename it as WINDOWS11.       ![Format Disk using Terminal](../assets/images/Create-Windows-11-Bootable-Disk-Diskutil.png )  
 
  Mount the Windows 11 ISO from the Downloads folder on your Mac. You  can do this by double-clicking on the ISO file, which should then show  up in your Mac's connected devices as **CCCOMA_X64FRE_EN-US_DV9** or similar. Remember to match the file name exactly to the one above.  If it's different (due to a different language preference), make sure to change it accordingly in the commands below.
-
-Related: [How to Make a Bootable CD/DVD/USB to Install Windows](https://www.makeuseof.com/tag/make-bootable-usb-cd-dvd-install-windows-using-iso-file/)
 
 Since the installer file is bigger than 4GB, we'll be using two  separate commands to create the bootable disk. The first command will  copy all the files apart from the install.wim file (which is 4.2GB) in  size. The second command will use wimlib to split and copy the  install.wim file to the USB stick.
 
@@ -67,7 +79,7 @@ Then run the following command to split and copy the install.wim file:
 wimlib-imagex split /Volumes/CCCOMA_X64FRE_EN-US_DV9/sources/install.wim /Volumes/WINDOWS11/sources/install.swm 3000
 ```
 
-​       ![Using wimlib command to create bootable disk in Terminal](/Users/liottar/projects/262life/262life.github.io/Typora/Create-Windows-11-Bootable-Disk-wimlib.png)  
+​       ![Using wimlib command to create bootable disk in Terminal](../assets/images/Create-Windows-11-Bootable-Disk-wimlib.png)  
 
  That's it! Terminal should successfully create the bootable disk, which you can now use to boot a fresh Windows installation. 
 
