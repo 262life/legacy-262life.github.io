@@ -30,7 +30,7 @@ Open the terminal… ***Ctrl+Alt+T\***
 - Add Etcher debian repository: 
   ***Press the Enter keyboard after every command.\***
 
-![img](/Users/liottar/projects/262life/262life.github.io/assets/images/1*s0ya1ewSsaupzOeN1GU8cA.png)
+![img](../assets/images/1*s0ya1ewSsaupzOeN1GU8cA.png)
 
 ```
 echo "deb https://deb.etcher.io stable etcher" | sudo tee /etc/apt/sources.list.d/balena-etcher.list
@@ -38,7 +38,7 @@ echo "deb https://deb.etcher.io stable etcher" | sudo tee /etc/apt/sources.list.
 
 - Trust Bintray.com’s GPG key:
 
-![img](/Users/liottar/projects/262life/262life.github.io/assets/images/1*ltKbb212dAWT_8lZmsiRpw.png)
+![img](../assets/images/1*ltKbb212dAWT_8lZmsiRpw.png)
 
 ```
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 379CE192D401AB61
@@ -61,13 +61,13 @@ sudo apt-get remove balena-etcher-electronsudo rm /etc/apt/sources.list.d/balena
 
 Search BalenaEtcher from your Application Menu, or simply press the windows key and type ‘BalenaEtcher’.
 
-![img](/Users/liottar/projects/262life/262life.github.io/assets/images/1*-DFWS5k1miXHSwka6fdeTQ.png)
+![img](../assets/images/1*-DFWS5k1miXHSwka6fdeTQ.png)
 
 Search for BalenaEtcher on ubuntu 18.04
 
 **STEP 3: The Final Step (Making the USB Bootable)**
 
-![img](/Users/liottar/projects/262life/262life.github.io/assets/images/1*XSqALcgXE7RNhbjjahNQkw.png)
+![img](../assets/images/1*XSqALcgXE7RNhbjjahNQkw.png)
 
 balenaEtcher environment
 
@@ -79,18 +79,18 @@ The environment is simple and straight forward:
 
 **Grab a cup of coffee, while the magic happens…**
 
-![img](/Users/liottar/projects/262life/262life.github.io/assets/images/1*bwlkpGzGiw7FGq5oG1x4Lw.png)
+![img](../assets/images/1*bwlkpGzGiw7FGq5oG1x4Lw.png)
 
 flashing
 
-![img](/Users/liottar/projects/262life/262life.github.io/assets/images/1*KF7wiCCzEOaLJOCJwDTd-A.png)
+![img](../assets/images/1*KF7wiCCzEOaLJOCJwDTd-A.png)
 
 validating
 
 **Boom!!! Magic Done. 
 Your USB flash drive is bootable, unmount your drive, and go make yourself proud…**
 
-![img](/Users/liottar/projects/262life/262life.github.io/assets/images/1*KVSuTR0yXUyO4s6qav4sBA.png)
+![img](../assets/images/1*KVSuTR0yXUyO4s6qav4sBA.png)
 
 Flash complete
 
