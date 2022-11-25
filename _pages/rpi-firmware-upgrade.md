@@ -1,3 +1,14 @@
+---
+layout: single
+author_profile: true
+title:  "Raspberry Pi: Upgrade Firmware to boot on USB"
+summary: "Create bootable firmware media...."
+read_time: true
+comments: true
+share: false
+related: false
+collection: examples
+---
 # Firmware Upgrade
 
 ***Editor's Note (7/24/2021):*** _We have updated this tutorial to include how you can boot your_ ***Raspberry Pi 400*** _from USB._
