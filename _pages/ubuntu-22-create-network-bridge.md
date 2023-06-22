@@ -62,7 +62,8 @@ So my server has an “ETH0” which uses the enp0s31f6 Ethernet interface. I am
 Step 1 – Creating a network bridge named br0
 
 The syntax is:
-$ sudo nmcli con add ifname br0 type bridge con-name br0
+$ 
+
 $ sudo nmcli con add type bridge-slave ifname enp0s31f6 master br0
 $ nmcli connection show
 
