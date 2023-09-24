@@ -20,7 +20,7 @@ echo DEVICE=$DEV
 
 ```
 
-* Creat the base image
+* Create the base image
 
 ```bash
 # Unmount The disk in case it's mounted.  You can get an error if NOT mounted
@@ -187,18 +187,64 @@ runcmd:
 apt_update: true
 ```
 
-## Multipass
+## RPI Multipass
+
+### Review This very hard to find article that explains issues on USB Disk
+
+https://forums.raspberrypi.com/viewtopic.php?t=245931
+
+/boot/cmdline.txt
+usb-storage.quirks=0bda:9210:u
 
 Had to add this....
 
-https://gist.github.com/ynott/f4bdc89b940522f2a0e4b32790ddb731
+```bash
+sudo apt remove NetworkManager network-manager
+sudo snap install network-manager # Wait for it to come up
+sudo nmcli general
+
+sudo rm /etc/netplan/50-cloud-init.yaml
+
+sudo nmcli con add type bridge ifname br0 con-name br0
+sudo nmcli con add type bridge-slave ifname eth0 master br0
+sudo nmcli con up br0
+
+sudo reboot
+```
+
+Note: Raspberry Pi is eth0 but intel can be different
+
+```bash
+sudo snap remove lxd
+sudo snap install lxd
+sudo snap refresh --edge lxd # There is a defect reported in September 2023.  This is the fix.
+sudo lxd init --auto
+
+ubuntu@linux-lab-mini:~$ snap list # Should be similar to below
+Name             Version      Rev    Tracking          Publisher   Notes
+core22           20230801     867    latest/stable     canonical✓  base
+lxd              git-2d84817  25774  latest/edge       canonical✓  -
+multipass        1.12.2       10647  latest/candidate  canonical✓  -
+network-manager  1.36.6-6     850    22/stable         canonical✓  -
+snapd            2.60.3       20102  latest/stable     canonical✓  snapd
+ubuntu@linux-lab-mini:~$
+
+```
+
+```bash
+sudo snap remove multipass
+sudo snap install multipass
+sudo snap connect multipass:lxd lxd; sudo multipass set local.driver=lxd
+sudo multipass set local.passphrase=Av3ng3r5!
+```
+
+
 
 sudo multipass launch  --network br0  --name test1 --cloud-init=./multipass-user-data -c 2 -m 8Gib -d 30GiB
 
 
 
-ip a sh enp6s0 | grep -Eo 'inet [0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | cut -d' ' -f2
 
 
 
-Need to change the default route-mtric to 50 see /etc/netplan
+
