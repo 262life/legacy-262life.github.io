@@ -193,23 +193,44 @@ apt_update: true
 
 https://forums.raspberrypi.com/viewtopic.php?t=245931
 
-/boot/cmdline.txt
-usb-storage.quirks=0bda:9210:u
+/boot/config.txt
 
 Had to add this....
 
 ```bash
-sudo apt remove NetworkManager network-manager
-sudo snap install network-manager # Wait for it to come up
-sudo nmcli general
+#sudo apt remove NetworkManager network-manager
+#sudo snap install network-manager # Wait for it to come up
+#sudo nmcli general
+
+vi /boot/firmware/config.txt
+#add 
+
+hdmi_force_hotplug=1
+
+vi /etc/ssh/sshd_config 
+#Change this to yes
+KbdInteractiveAuthentication yes
 
 sudo rm /etc/netplan/50-cloud-init.yaml
+vi 00-network-init.yaml
+network:
+  ethernets:
+    eth0:
+      dhcp4: no
+      dhcp6: no
+  version: 2
+  renderer: networkd
+  bridges:
+    br0:
+      interfaces: [eth0]
+      macaddress:  # The one from eth0
+      dhcp4: yes
+      dhcp6: no
 
-sudo nmcli con add type bridge ifname br0 con-name br0
-sudo nmcli con add type bridge-slave ifname eth0 master br0
-sudo nmcli con up br0
 
-sudo reboot
+
+
+sudo netplan apply
 ```
 
 Note: Raspberry Pi is eth0 but intel can be different
@@ -236,6 +257,14 @@ sudo snap remove multipass
 sudo snap install multipass
 sudo snap connect multipass:lxd lxd; sudo multipass set local.driver=lxd
 sudo multipass set local.passphrase=Av3ng3r5!
+sudo systemctl edit snap.multipass.multipassd.service  ### Add the following
+
+[Service]
+ExecStart=
+ExecStart=/usr/bin/snap run multipass.multipassd --address linux-lab.262.life:51005
+
+
+
 ```
 
 
