@@ -212,7 +212,7 @@ vi /etc/ssh/sshd_config
 KbdInteractiveAuthentication yes
 
 sudo rm /etc/netplan/50-cloud-init.yaml
-vi 00-network-init.yaml
+sudo cat <<< :EOD > /etc/netplan/00-network-init.yaml
 network:
   ethernets:
     eth0:
@@ -226,11 +226,12 @@ network:
       macaddress:  # The one from eth0
       dhcp4: yes
       dhcp6: no
-
-
-
-
+:EOD      
 sudo netplan apply
+
+vi /etc/hostname
+#change hostname
+hostname -b hostname
 ```
 
 Note: Raspberry Pi is eth0 but intel can be different
@@ -261,15 +262,19 @@ sudo systemctl edit snap.multipass.multipassd.service  ### Add the following
 
 [Service]
 ExecStart=
-ExecStart=/usr/bin/snap run multipass.multipassd --address linux-lab.262.life:51005
+#ExecStart=/usr/bin/snap run multipass.multipassd --address unix:/var/snap/multipass/common/multipass_socket
+ExecStart=/usr/bin/snap run multipass.multipassd --address pi01.262.life:51005
 
+
+snap restart multipass
+
+#To test
+multipass launch  --network br0  --name test1 --cloud-init=projects/262lab/cloud-init/mp-partitioned -c 2 -m 7.5Gib -d 30GiB
 
 
 ```
 
 
-
-sudo multipass launch  --network br0  --name test1 --cloud-init=./multipass-user-data -c 2 -m 8Gib -d 30GiB
 
 
 
