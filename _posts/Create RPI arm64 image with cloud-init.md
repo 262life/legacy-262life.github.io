@@ -269,7 +269,7 @@ ExecStart=/usr/bin/snap run multipass.multipassd --address pi01.262.life:51005
 snap restart multipass
 
 #To test
-multipass launch  --network br0  --name test1 --cloud-init=projects/262lab/cloud-init/mp-partitioned -c 2 -m 7.5Gib -d 30GiB
+multipass launch  --network br0  --name test1 --cloud-init=projects/lab2023/cloud-init/mp-partitioned -c 2 -m 7.5Gib -d 30GiB
 
 
 ```
