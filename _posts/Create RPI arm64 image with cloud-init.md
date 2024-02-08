@@ -67,8 +67,6 @@ runcmd:
  - echo "" >> /etc/issue
 ```
 
-
-
 ```
 #Boot
 
@@ -132,9 +130,9 @@ fi
 
         do TOKEN=$(echo "$I$PASS" | sha1sum | awk '{ print $1}')
            echo Token: $TOKEN
-           microk8s add-node -t $TOKEN           
+           microk8s add-node -t $TOKEN         
         done 
-        
+      
 # Control Plane
 
 Need to add hostname to /etc/hosts for each node on the master
@@ -142,14 +140,10 @@ egrep '[^0-9]16443/open' logs/pb-port16443scan2-*.gnmap | awk -F'[ ()]' '{print 
 while read I H
         do TOKEN=$(echo "$I$PASS" | sha1sum | awk '{ print $1}')
            echo Token: $TOKEN
-           microk8s add-node -t $TOKEN           
+           microk8s add-node -t $TOKEN         
         done 
-        
+      
 ```
-
-
-
-
 
 ```
 #cloud-config
@@ -172,14 +166,14 @@ runcmd:
    microk8s start
    microk8s status  
    if test "$IP" = "1"
-   then microk8s enable dns storage ingress        
+   then microk8s enable dns storage ingress      
         for I in $(seq 1 9)
         do TOKEN=$(echo "$I$PASS" | sha1sum | awk '{ print $1}')
-           microk8s add-node -t $TOKEN           
+           microk8s add-node -t $TOKEN         
         done 
         microk8s config | sed -e "s|server: https://$NET.1:16443|server: https://$OUT:16443|" >/etc/kubeconfig
    else 
-        TOKEN="$(echo "$IP$PASS" | sha1sum | awk '{ print $1}')"        
+        TOKEN="$(echo "$IP$PASS" | sha1sum | awk '{ print $1}')"      
         while ! microk8s join "$NET.1:25000/$TOKEN"
         do echo retrying to join... ; sleep 10
         done
@@ -226,7 +220,7 @@ network:
       macaddress:  # The one from eth0
       dhcp4: yes
       dhcp6: no
-:EOD      
+:EOD    
 sudo netplan apply
 
 vi /etc/hostname
@@ -266,19 +260,17 @@ ExecStart=
 ExecStart=/usr/bin/snap run multipass.multipassd --address pi01.262.life:51005
 
 
+
+
 snap restart multipass
+
+# Add Networking to lxc
+
+lxc config set core.https_address :51004
+
 
 #To test
 multipass launch  --network br0  --name test1 --cloud-init=projects/lab2023/cloud-init/mp-partitioned -c 2 -m 7.5Gib -d 30GiB
 
 
 ```
-
-
-
-
-
-
-
-
-
