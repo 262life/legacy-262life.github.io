@@ -272,5 +272,7 @@ lxc config set core.https_address :51004
 #To test
 multipass launch  --network br0  --name test1 --cloud-init=projects/lab2023/cloud-init/mp-partitioned -c 2 -m 7.5Gib -d 30GiB
 
+# test
+
 
 ```
