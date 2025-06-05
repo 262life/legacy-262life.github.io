@@ -63,7 +63,8 @@
   li {
     display: inline-block;
     padding-top: 5px;
-    padding-bottom: 5px;
+    xpadding-bottom: 5px;
+    padding-bottom: 0px;
     font-family: $sans-serif-narrow;
     font-size: $type-size-6;
     text-transform: uppercase;
