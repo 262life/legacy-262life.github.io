@@ -24,7 +24,7 @@
     xmargin-top: 2em;
     margin-top: 0em;
     max-width: 100%;
-    padding: 0 1em 2em;
+    xpadding: 0 1em 2em;
     padding: 0 1em 0em;
 
     @include breakpoint($x-large) {
