@@ -3,7 +3,7 @@ layout: post
 title:  "Beeline"
 summary: "Quick and Easy guide to Beeline shortcuts for kubectl"
 header:
-  teaser: /assets/images/twitter-card.png
+  xxxteaser: /assets/images/twitter-card.png
 excerpt_separator: <!--more-->
 ---
 <img align="left" src="/assets/images/K8-Beeline.png">
