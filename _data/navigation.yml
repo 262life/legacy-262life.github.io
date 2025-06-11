@@ -6,8 +6,8 @@ main:
     url: /about/
   - title: "Projects"
     url: /portfolio/
-  - title: "Notes"
-    url: /_pages/
+#  - title: "Notes"
+#    url: /_pages/
   - title: "Blog"
     url: /newpages/
   - title: "Articles"
