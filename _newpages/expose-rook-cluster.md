@@ -1,3 +1,19 @@
+
+---
+title:  "Expose Rook Cluster Outside K3s"
+excerpt: "Expose Rook Cluster Outside K3s..."
+header:
+  ###image: /assets/images/mick-haupt-8tN0Uq0GjCs-unsplash_800X539.jpg
+  teaser: assets/images/mick-haupt-8tN0Uq0GjCs-unsplash_640X431.jpg
+sidebar:
+  - title: "Purpose"
+    ximage: https://262.life/assets/images/logo.png
+    image_alt: "logo"
+    text: "Various Graphics used in projects"
+  - title: "Special Thanks"
+    text: "A shout out to my friend and idol Alexis Mattey for helping me with all the artwork!"
+
+
 ---
 layout: single
 author_profile: true
