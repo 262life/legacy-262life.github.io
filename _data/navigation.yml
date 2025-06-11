@@ -8,6 +8,8 @@ main:
     url: /portfolio/
   - title: "Notes"
     url: /_pages/
+  - title: "Blog"
+    url: /newpages/
   - title: "Articles"
     url: /_posts/
   # - title: "Sitemap"

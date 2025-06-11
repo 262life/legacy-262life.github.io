@@ -288,6 +288,16 @@ defaults:
       share: true
       read_time: true
 
+  # _newpages
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      read_time: true
+
   # _portfolio
   - scope:
       path: ""
