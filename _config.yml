@@ -291,12 +291,11 @@ defaults:
   # _newpages
   - scope:
       path: ""
-      type: portfolio
+      type: newpages
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       share: true
-      read_time: true
 
   # _portfolio
   - scope:
