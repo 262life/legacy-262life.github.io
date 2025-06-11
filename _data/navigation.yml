@@ -5,7 +5,7 @@ main:
   - title: "About"
     url: /about/
   - title: "Projects"
-    url: /_portfolio/
+    url: /portfolio/
   - title: "Notes"
     url: /_pages/
   - title: "Articles"
