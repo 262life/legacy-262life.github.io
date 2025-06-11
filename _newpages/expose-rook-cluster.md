@@ -1,4 +1,3 @@
-
 ---
 title:  "Expose Rook Cluster Outside K3s"
 excerpt: "Expose Rook Cluster Outside K3s..."
@@ -12,19 +11,6 @@ sidebar:
     text: "Various Graphics used in projects"
   - title: "Special Thanks"
     text: "A shout out to my friend and idol Alexis Mattey for helping me with all the artwork!"
-
-
----
-layout: single
-author_profile: true
-title:  "Expose Rook Cluster Outside K3s"
-summary: "Expose Rook Cluster Outside K3s..."
-read_time: true
-comments: true
-share: false
-related: false
-collection: examples
-
 ---
 Expose a Rook-based Ceph cluster outside of Kubernetes
 By Leo SCHOUKROUN adaltas.com4 min
