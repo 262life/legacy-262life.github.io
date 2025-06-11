@@ -291,7 +291,7 @@ defaults:
   # _newpages
   - scope:
       path: ""
-      type: newpages
+      type: portfolio
     values:
       layout: single
       author_profile: false
