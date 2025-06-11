@@ -3,7 +3,7 @@ title:  Blog
 layout: collection
 permalink: /newpages/
 collection: newpages
-entries_layout: grid
+entries_layout: list
 classes: wide
 ---
 
